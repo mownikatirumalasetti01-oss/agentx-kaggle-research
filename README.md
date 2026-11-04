@@ -6,13 +6,29 @@ Problem statement: A single chat board cannnot complete a full research project.
 
 Introduction that 3 ai agents: Planner Agent: Take a main point and breaks it into small parts like tasks using chain of thought reasoning. Researcher Agent: Automatically it searches paper and give extract large information. Executor Agent: Writes a code , testing the code,and create the final report.
 
-AgentX - by Mownika - GKS 2027 goal = "Research on Telugu Handwriting"
+AgentX - by Mownika - GKS 2027 
+goal = "Research on Telugu Handwriting"
 
-def agentx_planner(goal): print(f"\n[AgentX Thinking for: {goal}]") tasks = { "Research": f"Search papers for {goal}", "Planning": "Create timeline", "Execution": "Write code and test" } return tasks
+def agentx_planner(goal):
+    print(f"\n[AgentX Thinking for: {goal}]")                                   
+    tasks={
+           "Research": f"Search papers for {goal}",       
+           "Planning": "Create timeline", 
+           "Execution": "Write code and test" 
+        } 
+        return tasks
 
-def agentx_executor(tasks): for role, work in tasks.items(): print(f"-> Agent {role} is working on: {work}")
+def agentx_executor(tasks):
+      for role, work in tasks.items(): 
+          print(f"-> Agent {role} is working on: {work}")
 
-my_tasks = agentx_planner(goal) agentx_executor(my_tasks) print("\n AgentX completed planning! Not just a chatbot!") OUTPUT: [AgentX Thinking for: Research on Telugu Handwriting] -> Agent Research is working on: Search papers for Research on Telugu Handwriting -> Agent Planning is working on: Create timeline -> Agent Execution is working on: Write code and test
+my_tasks = agentx_planner(goal) agentx_executor(my_tasks) 
+print("\n AgentX completed planning! Not just a chatbot!")
+
+ OUTPUT: [AgentX Thinking for: Research on Telugu Handwriting]
+ -> Agent Research is working on: Search papers for Research on Telugu Handwriting 
+-> Agent Planning is working on: Create timeline 
+-> Agent Execution is working on: Write code and test
 
 AgentX completed planning! Not just a chatbot!
 
