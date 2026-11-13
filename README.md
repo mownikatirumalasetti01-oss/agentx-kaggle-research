@@ -2,13 +2,13 @@ kaggle.com/writeups/tmownika/auto-research-with-this-3-ai-agents An automatic re
 
 Introduction: Now large language models (LLMs) like ChatGPT are reactive systems that only react to user questions. However,the future of AI is automatic agents that can think,plan,and execute it independently. My project AgentX is build such a pro-active system.
 
-Problem statement: A single chat board cannot complete a full research project. The core problem is lack of autonomous task decomposition and multi-agent collaboration.
+Problem statement: A single chatbot cannot complete a full research project. The core problem is lack of autonomous task decomposition and multi-agent collaboration.
 
 Introduction that 3 ai agents: Planner Agent: Take a main point and breaks it into small parts like tasks using chain of thought reasoning. Researcher Agent: Automatically it searches paper and give extract large information. Executor Agent: Writes a code , testing the code,and create the final report.
 
 AgentX - by Mownika 
 
-"architecture: planner->researcher->executor. Each agent has its own role and talk to each other using structured message "
+architecture: planner->researcher->executor. Each agent has its own role and talk to each other using structured message.
 
 goal = "Research on Telugu Handwriting"
 
